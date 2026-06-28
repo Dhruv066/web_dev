@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+    <div class="container">
+        <h2>1. Default flex (column)</h2>
+        <div class="flex-container"
+        style="display:flex;">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+
+    </div>
+    <div class="container">
+        <h2>2 flex Direction : row</h2>
+        <div class="flex-container"
+        style="display:flex; flex-direction: row">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>3.justify content (space between)</h2>
+        <div class="flex-container"
+        style="display:flex; flex-direction: row; justify-content: space-between;">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>4. Align Items: Center</h2>
+        <div class="flex-container"
+        style="display:flex; flex-direction: row; align-items: center;">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>5. flex-wrap :wrap</h2>
+        <div class="flex-container"
+        style="display:flex-wrap; flex-direction:row; ">
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+            <div class="circle">6</div>
+            <div class="circle">7</div>
+            <div class="circle">8</div>
+            <div class="circle">9</div>
+            <div class="circle">10</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>6. align content : space around </h2>
+        <div class="flex-container"
+        style="display:flex-wrap; flex-direction:row; align-content: space-around;"
+        >
+            <div class="circle">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+            <div class="circle">4</div>
+            <div class="circle">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>7. order property </h2>
+        <div class="flex-container"
+        style="display:flex-wrap; flex-direction:row; align-content: space-around;"
+        >
+            <div class="circle" style="order: 5;">1</div>
+            <div class="circle" style="order: 4;">2</div>
+            <div class="circle" style="order: 3;">3</div>
+            <div class="circle" style="order: 2;">4</div>
+            <div class="circle" style="order: 1;">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>8. flex grow property </h2>
+        <div class="flex-container"
+        style="display:flex-wrap; flex-direction:row; align-content: space-around;"
+        >
+            <div class="circle"style="flex-grow: 1;">1</div>
+            <div class="circle"style="flex-grow: 2;">2</div>
+            <div class="circle"style="flex-grow: 4;">3</div>
+            <div class="circle"style="flex-grow: 1;">4</div>
+            <div class="circle"style="flex-grow: 0;">5</div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>9.align self</h2>
+        <div class="flex-container"
+        style="display:flex-wrap; flex-direction:row; align-content: space-around; height: 400px;"
+        >
+            <div class="circle"style="align-self: flex-start">1</div>
+            <div class="circle"style="align-self: flex-end;">2</div>
+            <div class="circle"style="align-self: flex-center;">3</div>
+            <div class="circle"style="align-self: flex-stretch; height: auto;">4</div>
+            <div class="circle"style="align-self: flex-start;">5</div>
+        </div>
+    </div>
+</body>
+</html>

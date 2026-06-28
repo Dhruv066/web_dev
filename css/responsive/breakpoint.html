@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;   
+            align-items: center;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+        .responsiv-div{
+            width: 100%;
+            background-color: tomato;
+            max-width: 1200px;
+            font-size: 20px;
+            padding: 10px;
+            color:white;
+        }
+        @media (max-width: 768px){
+            .responsiv-div{
+                background-color: blue;
+                font-size: 15px;
+            }
+            body{
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsiv-div">
+        lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+</body>
+</html>

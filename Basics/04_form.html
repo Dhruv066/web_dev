@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <style>
+      form{
+        line-height: 50px;
+      }
+      </style>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Form</legend>
+
+      <form target="_blank" autocomplet="on" >
+        <label for="name">Name:</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        title="Enter your full name"
+        placeholder="Enter your name"
+        /><br>
+        <label for="Rollno" id="roll" title="roll number">Roll No.: </label>
+        <input type="Number" title="rollno" />
+        <br>
+        <label for="country">Country :</label>
+        <select id="country" name="country" title="Select your country">
+          <option value="">--Select--</option>
+          <option value="us">United States</option>
+          <option value="ca">Canada</option>
+          <option value="in">India</option>
+        </select>
+        <br>
+        <label for="gender" title="select the gender">Gender :</label>
+        <label for="gender" title="Male ">Male</label>
+        
+        <input type="radio" title="male">
+        <label for="gender" title="Female ">Female</label>
+        <input type="radio" title="female"><br>
+        <label for="phoneno.">Phone No. :</label>
+        <input type="tel" title="phone"><br>
+        <label for="dob">D.O.B. :</label>
+        <input type="date" title="dob"><br>
+        <input type="submit" title="submit"><br>
+
+        
+        
+      </form>
+    </fieldset>
+  </body>
+</html>
