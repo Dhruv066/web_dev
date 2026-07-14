@@ -1,0 +1,16 @@
+.Button{
+    
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: wrap;
+    grid-template-columns: 46px 46px 46px 46px;
+    grid-row-start:span 2;
+    
+    
+}
+.ButtonsName{
+    width: 45px;
+    height: 45px;
+    margin: 2px;
+}
