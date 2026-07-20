@@ -1,0 +1,89 @@
+
+.container{
+    display: wrap;
+    flex-direction:row;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid rgb(248, 39, 39); */
+    /* height: 90vh; */
+    background-image: url(../../assets/professional2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right ;
+    
+    
+}
+.name{
+    color: white;
+    font-size: 45px;
+    margin-left: 40px;
+    font-family: Copperplate, Papyrus, fantasy;
+   
+
+}
+.leftContainer{
+    width:50%   ;
+    /* border: 2px solid white; */
+    
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+    
+}
+.rightContainer{
+    /* border: 2px solid white; */
+    /* width: fit-content; */
+  
+}
+.intro{
+
+    font-size: 20px;
+    color: red;
+    font-weight: 800;
+    margin: 40px 0px  0px 40px;
+    font-family: Copperplate, Papyrus, fantasy;
+
+    
+}
+.aboutPara{
+    color: white;
+    font-size: 20px;
+    margin: 25px 0px 25px 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.leftContainer h1{
+    font-size: 4vw;
+}
+.btn:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: red;
+}
+.btn{
+    margin: 40px;
+    padding: 20px;
+    border:none;
+    background-color: red;
+    color: white ;
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: 1px 0px 20px rgb(233, 231, 231);
+    width: fit-content ;
+    height: 3em;
+    
+}
+.btns{
+    display: block;
+    /* border: 2px solid white; */
+}
+
+.middiv{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items:center;
+    /* height: 90vh; */
+    margin-left: 100px;
+    padding-top:200px ;
+    
+}

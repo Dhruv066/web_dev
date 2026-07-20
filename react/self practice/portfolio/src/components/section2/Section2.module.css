@@ -1,0 +1,72 @@
+.container{
+    margin: 20px;
+    padding: 120px;
+    
+}
+.heading{
+    font-family: Arial, sans-serif;
+    color: white;
+    text-decoration: underline 3px rgb(252, 2, 2);
+    text-underline-offset: 10px;
+    margin-bottom:20px ;
+    font-size: 40px;
+}
+.heading span{
+    color: red;
+    text-decoration: underline 3px rgb(236, 234, 234);
+    text-underline-offset: 10px;
+
+}
+.parentContain{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    /* font-weight: ; */
+
+}
+.leftContainer{
+    /* border: 2px solid white; */
+    width: 70%;
+}
+.rightContainer{
+    /* border: 1px solid white; */
+    display: flex   ;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.topParent{
+    /* border: 1px solid whitesmoke; */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: stretch;
+}
+.topChild{
+    border: 1px solid white;
+    background-color: rgb(84, 81, 81);
+    padding: 40px;
+    border-radius: 20px;
+    align-self: stretch;flex-grow: 1;
+}
+.bottomDiv{
+    border: 1px solid rgb(243, 234, 234);
+    background-color: rgb(84, 81, 81);
+    padding: 40px;
+    border-radius: 20px;
+}
+.bottomDiv h4{
+    margin-bottom: 10px;
+    font-size: larger;
+    color: rgb(244, 86, 86);
+}
+.topChild h3{
+    color: rgb(247, 71, 71);
+    font-size: 30px;
+}
+.topChild:hover,.bottomDiv:hover{
+    border: 1px dashed rgb(241, 37, 37);
+}

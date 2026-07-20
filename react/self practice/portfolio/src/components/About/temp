@@ -1,0 +1,50 @@
+.animatedTxt{
+    position: relative;
+    font-size: 3em;
+}
+.animatedTxt span::before{
+    content: "Life Long Learner";
+    color: red;
+    animation: words 20s infinite;
+}
+.animatedTxt span::after{
+    content: "";
+    position: absolute;
+    width:calc(100%+8px) ;
+    height: 100%;
+    background-color: aqua;
+    border-left:2px solid rgb(240, 228, 228) ;
+    right: -8px;
+    animation: cursor .3s infinite,typing 20s steps(14) infinite;
+
+}
+@keyframes cursor{
+    to{
+        border-left:2px solid rgb(232, 164, 164) ;
+    }
+}
+@keyframes words{
+    0%,20%{
+        content: "Tech Enthausiast";
+    }
+    21%,40%{
+        content: "Youtuber";
+    }
+    41%,60%{
+        content: "Vlogger";
+    }
+    61%,80%{
+        content: "Sientist";
+    }
+    81%,100%{
+        content: "Engineer";
+    }
+}
+@keyframes typing{
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100%+8px);
+    }
+}
