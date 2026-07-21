@@ -1,12 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Section2 from "./components/section2/Section2";
+import Skill from "./components/skill/Skill";
 const App = () => {
   return (
     <>
       <Navbar/>
+      <Home/>
       <About/>
-      <Section2/>
+      <Skill/>
     </>
   );
 };

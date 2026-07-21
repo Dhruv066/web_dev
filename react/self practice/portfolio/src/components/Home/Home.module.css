@@ -1,0 +1,145 @@
+@import "../common/Keyframe.module.css";
+
+.container {
+  display: wrap;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 2px solid rgb(248, 39, 39); */
+  /* height: 90vh; */
+  background-image: url(../../assets/professional2.png);
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  background-position: bottom right;
+}
+.name {
+  color: white;
+  font-size: 45px;
+  margin-left: 40px;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+.leftContainer {
+  width: 50%;
+  /* border: 2px solid white; */
+
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: column;
+  animation: slide-in-from-left 1s;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 30%;
+  animation-direction: reverse;
+}
+.rightContainer {
+  /* border: 2px solid white; */
+  /* width: fit-content; */
+  animation: slide-in-from-right 2s;
+  animation-timeline: scroll();
+  animation-range: entry 0% cover 40%;
+  animation-direction: reverse;
+}
+.intro {
+  font-size: 20px;
+  color: red;
+  font-weight: 800;
+  margin: 40px 0px 0px 40px;
+  font-family: Copperplate, Papyrus, fantasy;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.HomePara {
+  color: white;
+  font-size: 20px;
+  margin: 25px 0px 25px 40px;
+  font-family: "Trebuchet MS", sans-serif;
+  overflow: hidden;
+  max-width: 70%;
+}
+.leftContainer h1 {
+  font-size: 4vw;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: white;
+  color: red;
+}
+.btn {
+  margin: clamp(0.5rem, 2vw, 2rem);
+  padding: clamp(0.45rem, 1.5vw, 1rem) clamp(0.75rem, 2.5vw, 1.25rem);
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: clamp(14px, 2.2vw, 20px);
+  border-radius: 50px;
+  box-shadow: 1px 0px 20px rgb(233, 231, 231);
+  width: auto;
+  min-height: 2.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* border: 2px solid white; */
+}
+
+.middiv {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  /* height: 90vh; */
+  margin-left: 100px;
+  padding-top: 100px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .middiv {
+    flex-direction: column;
+    margin-left: 0;
+    padding-top: 60px;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .leftContainer {
+    width: 100%;
+    margin: 0 12px;
+    align-items: flex-start;
+  }
+
+  .rightContainer img {
+    width: 220px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  .name {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .HomePara {
+    font-size: 16px;
+    margin: 12px 12px 12px 12px;
+  }
+
+  .btn {
+    margin: 12px 8px;
+    padding: 10px 14px;
+    font-size: 16px;
+  }
+
+  .intro {
+    margin: 16px 0 0 12px;
+  }
+}

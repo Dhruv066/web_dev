@@ -1,0 +1,54 @@
+@keyframes slide-in-from-right {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity:100%;
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slide-in-from-left {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes drop-in {
+    from {
+      transform:
+        rotate(-30deg) translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform:
+        rotate(0deg) translateY(0%);
+      opacity: 1;
+    }
+  }
+
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 12px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .parentBlock {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .blocks {
+    min-width: auto;
+    width: 100%;
+    padding: 18px;
+    min-height: auto;
+  }
+}

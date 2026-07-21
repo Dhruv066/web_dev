@@ -1,20 +1,21 @@
-.container{
+.container {
   margin: 0;
-  padding: 20px;
+  padding: 10px;
   /* background-attachment: fixed; */
-  background-color:transparent ;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed; 
+  position: fixed;
   width: 100%;
-  backdrop-filter: blur(10px  );
+  backdrop-filter: blur(10px);
+  z-index: 10;
 }
 
-.logo{
+.logo {
   margin: 20px 0px 0px 60px;
-  font-family:  fantasy;
-  font-size: 6vh;
+  font-family: fantasy;
+  font-size: 2rem;
   font-weight: 100;
   color: white;
   letter-spacing: 0.2cap;
@@ -25,30 +26,94 @@ h4 span {
   color: rgb(241, 78, 78);
 }
 
-
- ul li{
-      
-    list-style: none;
-      
- }
- ul li a{
-  text-decoration:none;
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
   margin: 2vw;
   font-size: 20px;
   color: white;
-  
- }
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
 
- ul{
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn:hover,
+.btn:active {
+  text-decoration: red underline 3px;
+  text-underline-offset: 10px;
+  /* transform: translateY(30px); */
+  text-shadow: 0px 0px 100px rgb(255, 0, 0);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 12px;
+  }
+
+  .logo {
+    margin: 8px 0 0 16px;
+    font-size: 1.4rem;
+  }
+
+  ul {
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0 12px 0;
+    padding-left: 16px;
+  }
+
+  ul li a {
+    font-size: 16px;
+    margin: 8px 0;
+    display: inline-flex;
+    gap: 10px;
+  }
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 6px 12px 0 auto;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+  transition:
+    transform 200ms ease,
+    opacity 200ms ease;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* hide menu initially on small screens */
+  .ul {
+    display: none;
+  }
+
+  /* show when open */
+  .open {
     display: flex;
-    flex-direction: row;
-    
- }
-
-
- .btn:hover,.btn:active{
-   text-decoration: red underline 3px;
-   text-underline-offset: 10px;
-   transform: translateY(30px);
-   text-shadow: 0px 0px 100px rgb(255, 0, 0);
- }
+    flex-direction: column;
+    width: 100%;
+  }
+}

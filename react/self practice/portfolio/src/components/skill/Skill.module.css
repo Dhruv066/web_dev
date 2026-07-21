@@ -1,0 +1,79 @@
+@import "../common/Keyframe.module.css";
+.container {
+  margin: 20px;
+  padding: 120px;
+}
+.heading {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: underline 3px rgb(252, 2, 2);
+  text-underline-offset: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.blocks {
+  border: 1px solid white;
+  display: flex;
+  color: white;
+  padding: 30px;
+  background-color: rgb(46, 45, 45);
+  border-radius: 20px;
+  min-height: 100px;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  animation: slide-in-from-left 1000ms;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+.parentBlock {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: stretch;
+}
+.para {
+  color: white;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+}
+h6 {
+  color: white;
+  margin: 20px 0 0 10px;
+  font-size: 25px;
+}
+hr {
+  margin-bottom: 20px;
+}
+.blocks:hover {
+  border: 1px solid rgb(240, 75, 75);
+  transform: scale(1.01);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 12px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .parentBlock {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .blocks {
+    min-width: auto;
+    width: 100%;
+    padding: 18px;
+    min-height: auto;
+  }
+}
