@@ -7,7 +7,7 @@
   align-items: center;
   /* border: 2px solid rgb(248, 39, 39); */
   /* height: 90vh; */
-  background-image: url(../../assets/professional2.png);
+  /* background-image: url(../../assets/professional2.png); */
   background-repeat: no-repeat;
   background-size: 30% auto;
   background-position: bottom right;
@@ -16,7 +16,7 @@
   color: white;
   font-size: 45px;
   margin-left: 40px;
-  font-family: Copperplate, Papyrus, fantasy;
+  font-family: fantasy;
 }
 .leftContainer {
   width: 50%;
@@ -72,7 +72,7 @@
   color: white;
   font-size: clamp(14px, 2.2vw, 20px);
   border-radius: 50px;
-  box-shadow: 1px 0px 20px rgb(233, 231, 231);
+  /* box-shadow: 1px 0px 20px rgb(233, 231, 231); */
   width: auto;
   min-height: 2.4rem;
   display: inline-flex;

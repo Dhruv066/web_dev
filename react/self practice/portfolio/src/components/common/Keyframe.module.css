@@ -30,25 +30,12 @@
     }
   }
 
-  /* Mobile responsiveness */
-@media (max-width: 768px) {
-  .container {
-    padding: 40px 12px;
-  }
+@keyframes slide-in-from-left1 {
+    from {
+      transform: translateX(-100%) rotate(-180deg);
 
-  .heading {
-    font-size: 28px;
+    }
+    to {
+      transform: translateX(0%) rotate(0deg);
+    }
   }
-
-  .parentBlock {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .blocks {
-    min-width: auto;
-    width: 100%;
-    padding: 18px;
-    min-height: auto;
-  }
-}

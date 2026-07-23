@@ -5,7 +5,7 @@ import {
   RiMailSendLine,
   RiCodeBoxLine,
 } from "@remixicon/react";
-// import pic from "../../assets/professional2.png";
+import pic from "../../assets/professional2.png";
 
 const Home = () => {
   return (
@@ -39,7 +39,7 @@ const Home = () => {
           </div>
           {/* <SocialLinksUi /> */}
         </div>
-        {/* <div className={styles.rightContainer}><img src={pic}></img></div> */}
+        <div className={styles.rightContainer}><img src={pic}></img></div>
       </div>
     </div>
   );

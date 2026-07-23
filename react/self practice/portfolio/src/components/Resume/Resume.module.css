@@ -1,0 +1,15 @@
+.heading {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-decoration: underline 3px rgb(252, 2, 2);
+  text-underline-offset: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.container {
+  margin: 20px;
+  padding: 120px;
+  /* border: 2px solid white; */
+  background: rgb(0, 0, 0);
+}
