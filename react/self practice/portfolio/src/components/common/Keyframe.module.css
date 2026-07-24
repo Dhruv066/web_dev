@@ -33,6 +33,7 @@
 @keyframes slide-in-from-left1 {
     from {
       transform: translateX(-100%) rotate(-180deg);
+      
 
     }
     to {
