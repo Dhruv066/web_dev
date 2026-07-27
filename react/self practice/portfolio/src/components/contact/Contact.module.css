@@ -1,2 +1,37 @@
 @import "../common/Keyframe.module.css";
 
+.heading {
+  font-family: Arial, sans-serif;
+  color: var(--color4);
+  text-decoration: underline 3px var(--color1);
+  text-underline-offset: 10px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.container {
+  /* margin: clamp(1rem ,2rem ,3rem); */
+  /* padding: 4rem; */
+  /* border: 2px solid white; */
+  background: rgb(0, 0, 0);
+  margin: 20px;
+  padding: 120px;
+}
+.logo{
+    /* padding-right: 10px; */
+    
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 18px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .card {
+    max-width: none;
+  }
+}

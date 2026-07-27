@@ -9,8 +9,8 @@
 }
 
 .container {
-  margin: clamp(1rem ,2rem ,3rem);
-  padding: 1rem;
+  margin: 20px;
+  padding:120px;
   /* border: 2px solid white; */
   background: rgb(0, 0, 0);
 }
@@ -54,4 +54,18 @@
 }
 h4 span{
   color:var(--color1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 40px 18px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .card {
+    max-width: none;
+  }
 }
