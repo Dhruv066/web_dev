@@ -1,14 +1,15 @@
-.container{
-    /* border: 2px solid white;     */
-    margin: 0 0 0 30px;
-    display: flex;
-    gap: 15px;
-    /* flex-direction: row; */
-    justify-content: space-around;
+.linkscontainer{
+   
       
 }
 .sociobtn{
     color: rgb(231, 226, 226);
+    
+}
+.linkscontainer a{
+    
+    padding: 15px;
+   
 }
 .sociobtn:hover{
     transform: scale(1.2);

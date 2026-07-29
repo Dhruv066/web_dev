@@ -11,7 +11,7 @@ import style from './SocialLinksUi.module.css'
 const SocialLinksUi = () => {
 
   return (
-    <div className={style.container}>
+    <div className={style.linkscontainer}>
       <a href="/">
         <RiGithubLine size={30} className={style.sociobtn} />
       </a>

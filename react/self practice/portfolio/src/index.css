@@ -13,3 +13,6 @@ body{
     --color3:rgba(42, 40, 40, 0.979);
     --color4:rgb(252, 251, 251);
 }
+html {
+  scroll-behavior: smooth;
+}

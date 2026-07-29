@@ -40,3 +40,15 @@
       transform: translateX(0%) rotate(0deg);
     }
   }
+  @keyframes appear {
+    from {
+      transform: translateY(300px) ;
+      opacity: 10%;
+      
+
+    }
+    to {
+      transform: translateY(0) ;
+      opacity: 100%;
+    }
+  }
