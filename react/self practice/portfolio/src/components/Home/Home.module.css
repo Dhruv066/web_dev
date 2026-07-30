@@ -14,15 +14,17 @@
 }
 .name {
   color: white;
-  font-size: 45px;
-  margin-left: 40px;
-  font-family: fantasy;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  padding-left: 10px;
 }
 .leftContainer {
   width: 50%;
   /* border: 2px solid white; */
 
   display: flex;
+ 
   flex-shrink: 1;
   flex-direction: column;
   animation: slide-in-from-left 1s;
@@ -41,23 +43,30 @@
 .intro {
   font-size: 20px;
   color: red;
+  flex:1;
+  /* width: 100%; */
   font-weight: 800;
-  margin: 40px 0px 0px 40px;
+  /* margin: 40px 0px 0px 40px; */
   font-family: Copperplate, Papyrus, fantasy;
-  display: flex;
+ 
+ 
   align-items: center;
   gap: 8px;
+  /* border: 2px solid white; */
 }
 .HomePara {
+  
   color: white;
   font-size: 20px;
-  margin: 25px 0px 25px 40px;
+  /* margin: 25px 0px 25px 40px; */
   font-family: "Trebuchet MS", sans-serif;
   overflow: hidden;
-  max-width: 70%;
+  /* max-width: 70%; */
+  /* border: 2px solid white; */
 }
 .leftContainer h1 {
   font-size: 4vw;
+  /* border: 2px solid white; */
 }
 .btn:hover {
   transform: scale(1.05);
@@ -82,12 +91,15 @@
 .btns {
   display: flex;
   flex-wrap: wrap;
+  flex:1;
+  width: 100%;
   gap: 10px;
   /* border: 2px solid white; */
 }
 
 .middiv {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   /* justify-content: center; */
   align-items: center;

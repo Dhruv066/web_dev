@@ -16,7 +16,7 @@ const Home = () => {
             <RiCodeBoxLine size={20} /> Hello, I am,
           </p>
           <br />
-          <h1 className={styles.name}>Dhruv Maurya</h1>
+          <h6 className={styles.name}>Dhruv Maurya</h6>
           <br />
           {/* <div className={styles.animatedTxt}>
             <span></span>

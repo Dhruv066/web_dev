@@ -1,9 +1,12 @@
 .linkscontainer{
    
-      
+      display: flex;
+    flex-wrap:wrap;
+    gap: 20px;
 }
 .sociobtn{
     color: rgb(231, 226, 226);
+    
     
 }
 .linkscontainer a{

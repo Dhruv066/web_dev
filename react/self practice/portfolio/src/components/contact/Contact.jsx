@@ -3,7 +3,7 @@ import style from './Contact.module.css'
 import { RiContactsFill, RiMapPinLine, RiMailLine } from "@remixicon/react";
 const Contact = () => {
   return (
-    <div className={style.container} id='Contact'>
+    <div className={style.container} id="Contact">
       <h1 className={style.heading}>
         <RiContactsFill size={28} className={style.logo} />
         Contact us
@@ -40,14 +40,37 @@ const Contact = () => {
           <h3 className={style.subheadings}>Send a Message</h3>
           <form className={style.form}>
             <label>Your Name</label>
-            <input for="name" type='text' placeholder='John Doe' required></input>
+            <input
+              for="name"
+              type="text"
+              placeholder="John Doe"
+              required
+              className={style.input}
+              ></input>
             <label>Your Email</label>
-            <input form='email' type='email' placeholder='john@gmail.com' reqired></input>
+            <input
+              form="email"
+              type="email"
+              placeholder="john@gmail.com"
+              reqired
+              className={style.input}
+              ></input>
             <label>Subject</label>
-            <input for="subject" type='text' placeholder='Project inquiry' required></input>
+            <input
+              for="subject"
+              type="text"
+              placeholder="Project inquiry"
+              required
+              className={style.input}
+              ></input>
             <label>Message</label>
-            <input for="Message" type='text' placeholder='Hello, I would like to talk about' required></input>
-            
+            <textarea
+              for="Message"
+              type="textarea"
+              placeholder="Hello, I would like to talk about"
+              required
+              className={style.input}
+            ></textarea>
           </form>
         </div>
       </div>
