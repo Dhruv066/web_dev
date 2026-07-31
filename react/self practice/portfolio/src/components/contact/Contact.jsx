@@ -38,7 +38,7 @@ const Contact = () => {
 
         <div className={style.rightDiv}>
           <h3 className={style.subheadings}>Send a Message</h3>
-          <form className={style.form}>
+          <form action="https://formspree.io/f/xeeywbeg" className={style.form} method='POST'>
             <label>Your Name</label>
             <input
               for="name"
@@ -46,7 +46,7 @@ const Contact = () => {
               placeholder="John Doe"
               required
               className={style.input}
-              ></input>
+            ></input>
             <label>Your Email</label>
             <input
               form="email"
@@ -54,7 +54,7 @@ const Contact = () => {
               placeholder="john@gmail.com"
               reqired
               className={style.input}
-              ></input>
+            ></input>
             <label>Subject</label>
             <input
               for="subject"
@@ -62,7 +62,7 @@ const Contact = () => {
               placeholder="Project inquiry"
               required
               className={style.input}
-              ></input>
+            ></input>
             <label>Message</label>
             <textarea
               for="Message"
@@ -71,6 +71,7 @@ const Contact = () => {
               required
               className={style.input}
             ></textarea>
+            <button type='submit'className={style.sendbtn}>Send</button>
           </form>
         </div>
       </div>

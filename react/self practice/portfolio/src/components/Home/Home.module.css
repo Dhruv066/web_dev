@@ -107,6 +107,21 @@
   margin-left: 100px;
   padding-top: 100px;
 }
+.whatsapp{
+  /* border: 2px solid green; */
+  display: inline-block;
+  position: fixed;   /* Anchors the div relative to the viewport */
+  bottom: 40px;         /* Pins it directly to the bottom edge */
+  right: 0;          /* Pins it directly to the right edge */
+  z-index: 1000;     /* Ensures it stays on top of other content */
+  
+  /* Optional styling for visibility */
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  
+
+}
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {

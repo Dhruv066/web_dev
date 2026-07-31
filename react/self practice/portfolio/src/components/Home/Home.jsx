@@ -4,6 +4,7 @@ import {
   RiArrowRightLine,
   RiMailSendLine,
   RiCodeBoxLine,
+  RiWhatsappLine,
 } from "@remixicon/react";
 import pic from "../../assets/professional2.png";
 
@@ -39,7 +40,15 @@ const Home = () => {
           </div>
           {/* <SocialLinksUi /> */}
         </div>
-        <div className={styles.rightContainer}><img src={pic}></img></div>
+        <div className={styles.rightContainer}>
+          <img src={pic}></img>
+        </div>
+      </div>
+
+      <div className={styles.whatsapp}>
+        <a href="https://wa.me/9125833056">
+          <RiWhatsappLine color="red" size={50} />
+        </a>
       </div>
     </div>
   );
