@@ -4,7 +4,7 @@
 }
 .animatedTxt span::before{
     content: "Life Long Learner";
-    color: red;
+    color: var(--red);
     animation: words 20s infinite;
 }
 .animatedTxt span::after{

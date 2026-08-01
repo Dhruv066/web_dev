@@ -1,7 +1,12 @@
-import SocialLinksUi from '../common/SocialLinksUi';
-import style from './Contact.module.css'
+import SocialLinksUi from "../common/SocialLinksUi";
+import style from "./Contact.module.css";
 import { RiContactsFill, RiMapPinLine, RiMailLine } from "@remixicon/react";
+import { useForm, ValidationError } from "@formspree/react";
 const Contact = () => {
+  const [state, handleSubmit] = useForm("xeeywbeg");
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div className={style.container} id="Contact">
       <h1 className={style.heading}>
@@ -38,45 +43,70 @@ const Contact = () => {
 
         <div className={style.rightDiv}>
           <h3 className={style.subheadings}>Send a Message</h3>
-          <form action="https://formspree.io/f/xeeywbeg" className={style.form} method='POST'>
-            <label>Your Name</label>
+          <form onSubmit={handleSubmit} className={style.form}>
+            <label htmlFor="name">Your Name</label>
             <input
-              for="name"
+              id="name"
+              name="name"
               type="text"
               placeholder="John Doe"
               required
               className={style.input}
-            ></input>
-            <label>Your Email</label>
+            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+            <label htmlFor="email">Your Email</label>
             <input
-              form="email"
+              id="email"
+              name="email"
               type="email"
               placeholder="john@gmail.com"
-              reqired
+              required
               className={style.input}
-            ></input>
-            <label>Subject</label>
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <label htmlFor="subject">Subject</label>
             <input
-              for="subject"
+              id="subject"
+              name="subject"
               type="text"
               placeholder="Project inquiry"
               required
               className={style.input}
-            ></input>
-            <label>Message</label>
+            />
+            <ValidationError
+              prefix="Subject"
+              field="subject"
+              errors={state.errors}
+            />
+            <label htmlFor="message">Message</label>
             <textarea
-              for="Message"
-              type="textarea"
+              id="message"
+              name="message"
               placeholder="Hello, I would like to talk about"
               required
               className={style.input}
-            ></textarea>
-            <button type='submit'className={style.sendbtn}>Send</button>
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button
+              type="submit"
+              className={style.sendbtn}
+              disabled={state.submitting}
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Contact
+export default Contact;

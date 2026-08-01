@@ -47,7 +47,7 @@ const Home = () => {
 
       <div className={styles.whatsapp}>
         <a href="https://wa.me/9125833056">
-          <RiWhatsappLine color="red" size={50} />
+          <RiWhatsappLine color="green" size={50} />
         </a>
       </div>
     </div>

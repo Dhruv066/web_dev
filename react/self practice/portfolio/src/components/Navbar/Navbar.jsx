@@ -8,11 +8,13 @@ import {
   RiFolderOpenLine,
   RiFilePaper2Line,
   RiMailSendLine,
+  RiMoonLine,
+  RiSunLine,
 } from "@remixicon/react";
-// import { Lightbulb, Contact, House, Menu, FolderKanban } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
   const [open, setOpen] = useState(false);
+  const isDark = theme === "dark";
 
   return (
     <div className={styles.container}>
@@ -20,16 +22,27 @@ const Navbar = () => {
         Dhruv <span>Maurya</span>
       </h4>
 
-      <button
-        className={styles.hamburger}
-        onClick={() => setOpen((s) => !s)}
-        aria-label="Toggle menu"
-        aria-expanded={open}
-      >
-        <span />
-        <span />
-        <span />
-      </button>
+      <div className={styles.actions}>
+        <button
+          type="button"
+          className={styles.themeToggle}
+          onClick={toggleTheme}
+          aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+        >
+          {isDark ? <RiSunLine size={18} /> : <RiMoonLine size={18} />}
+        </button>
+
+        <button
+          className={styles.hamburger}
+          onClick={() => setOpen((s) => !s)}
+          aria-label="Toggle menu"
+          aria-expanded={open}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
 
       <div className={styles.btnContainer}>
         <ul className={`${styles.ul} ${open ? styles.open : ""}`}>

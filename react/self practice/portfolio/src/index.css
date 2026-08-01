@@ -1,17 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    background-color: rgb(0, 0, 0);
-    z-index: 10;
+body {
+  background-color: var(--background);
+  color: var(--text);
+  z-index: 10;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
-:root{
-    --color1:rgb(252, 2, 2);
-    --color2:rgb(0, 0, 0);
-    --color3:rgba(42, 40, 40, 0.979);
-    --color4:rgb(252, 251, 251);
+:root {
+  --red: rgb(252, 2, 2);
+  --black: rgb(0, 0, 0);
+  --grey: rgba(42, 40, 40, 0.979);
+  --white: rgb(252, 251, 251);
+  --background: #000000;
+  --text: #fdfdfd;
+  --nav-bg: rgba(0, 0, 0, 0.72);
+  --card-bg: rgba(46, 45, 45, 0.95);
+  --card-border: #ffffff;
+}
+:root[data-theme="light"] {
+  --black: #ffffff;
+  --white: #111111;
+  --grey: #d7d7d7;
+  --background: #f5f5f5;
+  --text: #111111;
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --card-bg: #ffffff;
+  --card-border: #d0d0d0;
 }
 html {
   scroll-behavior: smooth;

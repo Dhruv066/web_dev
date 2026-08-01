@@ -5,7 +5,7 @@
 }
 .heading {
   font-family: Arial, sans-serif;
-  color: white;
+  color: var(--white);
   text-decoration: underline 3px rgb(252, 2, 2);
   text-underline-offset: 10px;
   margin-bottom: 20px;
@@ -15,14 +15,14 @@
   gap: 12px;
 }
 .heading span {
-  color: red;
+  color: var(--red);
   text-decoration: underline 3px rgb(236, 234, 234);
   text-underline-offset: 10px;
 }
 .parentContain {
   display: flex;
   flex-direction: row;
-  color: white;
+  color: var(--white);
   gap: 100px;
   font-family: "Trebuchet MS", sans-serif;
   font-size: 18px;
@@ -43,7 +43,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 .topParent {
   /* border: 1px solid whitesmoke; */
@@ -53,8 +52,8 @@
   align-items: stretch;
 }
 .topChild {
-  border: 1px solid white;
-  background-color: rgb(84, 81, 81);
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
   padding: 40px;
   border-radius: 20px;
   align-self: stretch;
@@ -65,8 +64,8 @@
   animation-range: entry 0% cover 30%;
 }
 .bottomDiv {
-  border: 1px solid rgb(243, 234, 234);
-  background-color: rgb(84, 81, 81);
+  border: 1px solid var(--card-border);
+  background-color: var(--card-bg);
   padding: 40px;
   border-radius: 20px;
   animation: slide-in-from-right 600ms;
