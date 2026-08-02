@@ -1,0 +1,42 @@
+.footer{
+
+    padding: 0 120px 0 120px    ;
+}
+.upperdiv{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-between;
+}   
+.upperdiv h1{
+    color: var(--white);
+    font-size: 1.5rem;
+   
+    /* margin: 1rem; */
+}
+.upperdiv span{
+    color: var(--red);
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.upperdiv .nameDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   
+}
+.nameDiv div{
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+}
+
+.nameDiv .professiondiv{
+    display: flex;
+    border-right: 2px solid var(--red);
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+}

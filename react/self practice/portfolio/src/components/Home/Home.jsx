@@ -31,12 +31,15 @@ const Home = () => {
           </p>
 
           <div className={styles.btns}>
-            <button className={`${styles.viewProjectBtn} ${styles.btn}`}>
+            <a
+              href="#Projects"
+              className={`${styles.viewProjectBtn} ${styles.btn}`}
+            >
               <RiArrowRightLine size={18} /> View Projects
-            </button>
-            <button className={styles.btn}>
+            </a>
+            <a href="#Contact" className={styles.btn}>
               <RiMailSendLine size={18} /> Contact
-            </button>
+            </a>
           </div>
           {/* <SocialLinksUi /> */}
         </div>
